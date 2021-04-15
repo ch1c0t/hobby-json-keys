@@ -1,0 +1,27 @@
+PATH
+  remote: .
+  specs:
+    hobby-json-keys (0.0.0)
+      hobby-json (~> 0.0.6)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    hobby (0.2.2)
+      rack (~> 2)
+    hobby-json (0.0.6)
+      hobby (~> 0.2.2)
+    minitest (5.14.4)
+    rack (2.2.3)
+    rake (13.0.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  hobby-json-keys!
+  minitest
+  rake
+
+BUNDLED WITH
+   2.1.4
