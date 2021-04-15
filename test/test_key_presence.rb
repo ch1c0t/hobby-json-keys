@@ -5,12 +5,10 @@ app do
   key :second
 end
 
-describe :Some do
-  it 'works' do
-    p :asdsd
-  end
+it 'does this' do
+  p 'does thiis'
+end
 
-  it 'works2' do
-    is :something, :works
-  end
+it 'does that' do
+  is :subj, :pred
 end
