@@ -7,11 +7,15 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    excon (0.80.1)
     hobby (0.2.2)
       rack (~> 2)
     hobby-json (0.0.6)
       hobby (~> 0.2.2)
     minitest (5.14.4)
+    nio4r (2.5.7)
+    puma (5.2.2)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rake (13.0.3)
 
@@ -19,8 +23,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  excon
   hobby-json-keys!
   minitest
+  puma
   rake
 
 BUNDLED WITH
