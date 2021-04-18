@@ -2,4 +2,8 @@ require 'rake/testtask'
 
 Rake::TestTask.new
 
-task :default => :test
+task :bgem do
+  sh 'bundle exec bgem'
+end
+
+task :default => [:bgem, :test]

@@ -6,5 +6,6 @@ gem 'puma'
 gem 'excon'
 gem 'terminal-table'
 gem 'awesome_print'
+gem 'bgem'
 
 gemspec

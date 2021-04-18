@@ -8,6 +8,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     awesome_print (1.9.2)
+    bgem (0.0.12)
+      string-indent (>= 0.0.1)
     excon (0.80.1)
     hobby (0.2.2)
       rack (~> 2)
@@ -19,6 +21,7 @@ GEM
       nio4r (~> 2.0)
     rack (2.2.3)
     rake (13.0.3)
+    string-indent (0.0.1)
     terminal-table (3.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.7.0)
@@ -28,6 +31,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  bgem
   excon
   hobby-json-keys!
   minitest
