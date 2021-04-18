@@ -44,6 +44,10 @@ def app &block
     include Hobby::JSON::Keys
 
     instance_exec &block
+
+    post do
+      keys
+    end
   end
 
   name = File.basename caller_locations.first.path, '.rb'

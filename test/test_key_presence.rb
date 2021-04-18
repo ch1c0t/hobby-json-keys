@@ -3,10 +3,6 @@ require_relative 'helper'
 app do
   key :first
   key :second
-
-  post do
-    keys
-  end
 end
 
 it_accepts first: 1, second: 2

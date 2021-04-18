@@ -13,11 +13,19 @@ module Hobby
           @key_parsers ||= []
         end
 
-        def key key
+        def key key, type = nil
           key = key.to_s if key.is_a? Symbol
           parser = -> json {
-            [key, (json[key] or fail)]
+            value = json[key]
+            fail unless value
+
+            if type
+              fail unless type === value
+            end
+
+            [key, value]
           }
+
           self.key_parsers << parser
         end
       end
