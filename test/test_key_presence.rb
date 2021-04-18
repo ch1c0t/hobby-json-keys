@@ -9,8 +9,10 @@ app do
   end
 end
 
+it_accepts first: 1, second: 2
+it_rejects third: 3
+
 it 'accepts excessive input' do
-  socket = APPS[File.basename __FILE__, '.rb'][:socket]
   excon = Excon.new 'unix:///', socket: socket, headers: {
     'Content-Type'  => 'application/json',
   }
