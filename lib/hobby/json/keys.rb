@@ -21,6 +21,9 @@ module Hobby
 
             if type
               fail unless type === value
+              if [String, Array, Hash].include? type
+                fail if value.empty?
+              end
             end
 
             [key, value]
