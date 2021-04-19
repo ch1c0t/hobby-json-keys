@@ -20,3 +20,14 @@ def key key, type = nil
 
   self.key_parsers << parser
 end
+
+def types
+  @types ||= {}
+end
+
+def type symbol, &default
+  types[symbol] = Type.new &default
+  define_singleton_method symbol do |&custom|
+    types[symbol].expand &custom
+  end
+end
