@@ -21,6 +21,7 @@ GEM
       nio4r (~> 2.0)
     rack (2.2.3)
     rake (13.0.3)
+    rufo (0.12.0)
     string-indent (0.0.1)
     terminal-table (3.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
@@ -37,6 +38,7 @@ DEPENDENCIES
   minitest
   puma
   rake
+  rufo
   terminal-table
 
 BUNDLED WITH

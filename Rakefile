@@ -1,9 +1,13 @@
 require 'rake/testtask'
 
-Rake::TestTask.new
-
-task :bgem do
+task :build do
   sh 'bundle exec bgem'
 end
 
-task :default => [:bgem, :test]
+task :format do
+  sh 'bundle exec rufo lib/hobby/json/keys.rb || true'
+end
+
+Rake::TestTask.new
+
+task :default => [:build, :format, :test]
