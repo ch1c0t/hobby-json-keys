@@ -18,7 +18,9 @@ end
 
 def keys
   @keys ||= begin
-              self.class.key_parsers.map { |parser| parser[json] }.to_h
+              self.class.keys
+                .transform_values { |parser| parser[json] }
+                .compact
             rescue
               response.status = 400
               halt
