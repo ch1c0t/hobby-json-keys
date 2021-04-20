@@ -7,6 +7,5 @@ gem 'excon'
 gem 'terminal-table'
 gem 'awesome_print'
 gem 'bgem'
-gem 'rufo'
 
 gemspec
